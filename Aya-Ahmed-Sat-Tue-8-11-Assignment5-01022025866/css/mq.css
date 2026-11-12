@@ -1,0 +1,71 @@
+/* Media Query */
+
+/* Desktop and larger */
+@media (min-width: 1024px) {
+    
+    .container { 
+        width: 97%;
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "slidebar slidebar header header header header header header header header header header header header header header header"
+    "slidebar slidebar sum-card1 sum-card1 sum-card1 sum-card1 sum-card1 sum-card2 sum-card2 sum-card2 sum-card2 sum-card2 sum-card3 sum-card3 sum-card3 sum-card3 sum-card3"
+    "slidebar slidebar new-trans new-trans new-trans new-trans new-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans"
+    "slidebar slidebar new-trans new-trans new-trans new-trans new-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans"
+    "slidebar slidebar mon-bills mon-bills mon-bills mon-bills mon-bills recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans"
+    "slidebar slidebar mon-bills mon-bills mon-bills mon-bills mon-bills recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans recent-trans"
+    "slidebar slidebar overlook overlook overlook overlook overlook vs vs vs vs vs pay-method pay-method pay-method pay-method pay-method"
+    "slidebar slidebar overlook overlook overlook overlook overlook sum-acc sum-acc sum-acc sum-acc sum-acc pay-method pay-method pay-method pay-method pay-method"
+    "slidebar slidebar overlook overlook overlook overlook overlook sum-acc sum-acc sum-acc sum-acc sum-acc pay-method pay-method pay-method pay-method pay-method"; 
+}
+.slidebar { grid-area: slidebar; }
+.header { grid-area: header; }
+.sum-card1 { grid-area: sum-card1; }
+.sum-card2 { grid-area: sum-card2; }
+.sum-card3 { grid-area: sum-card3; }
+.mon-bills { grid-area: mon-bills; }
+.recent-trans { grid-area: recent-trans; }
+.new-trans { grid-area: new-trans; }
+.pay-method { grid-area: pay-method; }
+.vs { grid-area: vs; }
+.sum-acc { grid-area: sum-acc; }
+.overlook { grid-area: overlook; }
+.header-connect{
+display: flex;
+width: 5%;
+font-size: x-small;
+position: absolute;
+right: 25%;
+top: 3%;
+}
+.header-pfp{
+    align-items: start;
+    position: absolute;
+    left: 35px;
+    top: 30px;
+}
+.header-pfp-border {
+    width: 105px;
+    height: 45px;
+    padding: 10px;
+    background-color: white;
+    justify-content: flex-end;
+    margin-left: 10px;
+}
+.recent-trans table{
+    width: 100%;
+}
+.recent-trans{
+    margin: 0;
+}
+.new-trans .new-trans-content + .blue, .new-trans .green{
+    padding-right: 165px;
+}
+}
+.vs{
+    grid-area: vs;
+    width: 100%;
+    margin: 20px 0;
+}
